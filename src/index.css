@@ -4,6 +4,7 @@
     font-family: "Montserrat", sans-serif;
     --background-linear: linear-gradient(hsl(237, 73%, 79%), hsl(238, 63%, 64%));
     --blue-50: hsl(240, 78%, 98%);
+    --blue-200: hsl(238, 63%, 64%);
     --gray-650: hsl(233, 13%, 49%);
     --gray-700: hsl(232, 13%, 33%);
 }
@@ -24,13 +25,17 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--blue-50);
     padding: 3rem;
+    color: var(--gray-700);
+    font-weight: 700;
 }
 
-/*#root{
+#root{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-}*/
+    gap: 1rem;
+}
 
 li{
     list-style: none;
@@ -52,19 +57,6 @@ button{
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
-}
-
-.wide-btn{
-    padding: 0.8rem 1rem;
-    border: 0;
-    border-radius: 0.5rem;
-    background: var(--background-linear);
-    font-weight: 700;
-    color: white;
-}
-
-.wide-btn:hover, .wide-btn:focus {
-    outline: 0;
 }
 
 .toggle-btn {

@@ -3,4 +3,8 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+    color: var(--gray-650);
+}
+.container__period{
+    opacity: 0.8;
 }

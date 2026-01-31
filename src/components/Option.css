@@ -5,5 +5,74 @@
     align-items: center;
     gap: 1rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+}
+
+.container__option.special{
+    background: var(--background-linear);
+    color: white;
+}
+
+.container__option .price{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.container__option .price p:last-child{
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.container__option .feature{
+    width: 100%;
+    color: var(--gray-650);
+    border-top: 0.12rem solid var(--gray-650);
+    text-align:center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.container__option .feature:last-of-type{
+    border-bottom: 0.12rem solid var(--gray-650);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container__option.special .feature{
+    color: white;
+}
+
+.container__option .wide-btn{
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--background-linear);
+    font-weight: 700;
+    color: white;
+    width: 100%;
+}
+.container__option.special .wide-btn{
+    background:none;
+    background-color: white;
+    color: var(--blue-200)
+}
+
+.container__option .wide-btn:hover {
+    opacity: 0.7;
+}
+.container__option .wide-btn:active{
+    opacity: 0.4;
+}
+
+
+@media screen and (width >= 53rem){
+    .container__option.special{
+        padding: 4rem 2rem;
+    }
 }

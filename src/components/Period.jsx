@@ -4,7 +4,6 @@ import './Period.css';
 
 function Period() {
     const [period,setPeriod]=useState("annually");
-    const removeBtn=useRef(null);
     function handleTogglePeriod() {
         setPeriod(period==="annually"? "monthly": "annually");
     }

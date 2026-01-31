@@ -1,9 +1,14 @@
 .container__offers{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (width >= 801px){
-
+@media screen and (width >= 53rem){
+    .container__offers{
+        flex-direction: row;
+        gap: 0;
+    }
 }
