@@ -32,6 +32,10 @@ body {
     background-size: 50vw 60vh;
     background-position: -100% -100%, 75vw 0;
     background-repeat: no-repeat, no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 #root{
@@ -39,7 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 li{
