@@ -27,6 +27,11 @@ body {
     padding: 3rem;
     color: var(--gray-700);
     font-weight: 700;
+    min-height: 100vh;
+    background-image: url("/bg-bottom.svg"), url("/bg-top.svg");
+    background-size: 50vw 60vh;
+    background-position: -100% -100%, 75vw 0;
+    background-repeat: no-repeat, no-repeat;
 }
 
 #root{
@@ -94,4 +99,11 @@ button{
   a, button {
     transition: all 0.3s ease-out;
   }
+}
+
+@media screen and (width >= 53rem){
+    body{
+        background-size: auto, auto;
+        background-position:left bottom, right top;
+    }
 }

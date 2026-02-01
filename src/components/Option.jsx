@@ -1,18 +1,17 @@
 import React from 'react';
-import {useState,useRef} from 'react';
 import './Option.css';
 
-function Option({name, price, storage, numOfUsers, messageStorage}) {
+function Option({offer, priceOption}) {
     return (
-        <div className={`container__option ${name==="Professional" ? 'special' : ''}`}>
-            <p className="name">{name}</p>
+        <div className={`container__option ${offer.name==="Professional" ? 'special' : ''}`}>
+            <p className="name">{offer.name}</p>
             <div className="price">
                 <p>{`$`}</p>
-                <p>{price}</p>
+                <p>{priceOption==='annually'? offer.annuallyPrice : offer.monthlyPrice}</p>
             </div>
-            <p className="feature">{`${storage} Storage`}</p>
-            <p className="feature">{`${numOfUsers} users allowed`}</p>
-            <p className="feature">{`Send up to ${messageStorage}`}</p>
+            <p className="feature">{`${offer.features.storage} ${offer.features.storageUnit} Storage`}</p>
+            <p className="feature">{`${offer.features.numOfUsers} users allowed`}</p>
+            <p className="feature">{`Send up to ${offer.features.messageCapacity} ${offer.features.messageCapacityUnit}`}</p>
             <button className="wide-btn">LEARN MORE</button>
         </div>
     )
